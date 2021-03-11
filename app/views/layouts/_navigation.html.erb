@@ -13,7 +13,6 @@
           Articles
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <!-- <a class="dropdown-item" href="#">Action</a> -->
           <% if logged_in? %>
             <%= link_to "Create new article", new_article_path, class: "dropdown-item" %>
           <% end %>
@@ -26,7 +25,6 @@
           Categories
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <!-- <a class="dropdown-item" href="#">Action</a> -->
           <% if logged_in? && current_user.admin? %>
             <%= link_to "Create new category", new_category_path, class: "dropdown-item" %>
           <% end %>
